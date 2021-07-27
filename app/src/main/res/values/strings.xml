@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Food Ordering</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_order_detail">order_detail</string>
+    <string name="title_activity_amole">amole</string>
+</resources>

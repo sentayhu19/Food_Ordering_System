@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Menu"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#933"
+            android:background="@drawable/ordpizza"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Pizza (300 br)"
+            android:textSize="20sp"
+            android:textColor="#0a0a0a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"/>
+
+        <Button
+            android:id="@+id/pbutton"
+            android:layout_weight="1"
+            android:text="Add to cart"
+            android:onClick="add_to_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Burger (150 br)"
+            android:textSize="20sp"
+            android:textColor="#0a0a0a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pizza"
+            />
+
+        <Button
+            android:id="@+id/Bbutton"
+            android:layout_weight="1"
+            android:text="Add to cart"
+            android:onClick="add_to_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_weight="1"
+            android:text="Pastry (50 br)"
+            android:textSize="20sp"
+            android:textColor="#0a0a0a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cupc"
+            />
+        <Button
+            android:id="@+id/pabutton"
+            android:layout_weight="1"
+            android:text="Add to cart"
+            android:onClick="add_to_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_height="50dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="placeOrder"
+            android:text="Place Order"
+            android:textColor="#077"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.cyber.uuorder.OrderDetails"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textSize="25dp"
+        android:id="@+id/textView"
+        android:layout_weight="1"
+        android:text=" \n Sentayhu Berhanu UU68988R \n Meron Abrham  UU69821R \n Kirubel Habte   UU69762R\n  Orders"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:textSize="25sp"
+        android:textColor="#ff991610"
+        android:hint="items here"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/backg" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/paypal"
+
+        android:layout_gravity="right"
+        android:id="@+id/pay" />
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textColor="#ff991610"
+        android:hint="price here"
+        android:textSize="15sp"
+        android:layout_marginBottom="60dp"
+        android:layout_weight="0.39" />
+
+
+</LinearLayout>
